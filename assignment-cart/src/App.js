@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
+
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Route } from "react-router-dom"
+
 import Header from './Components/header.component';
 import Home from './Components/home.component';
 import Cart from './Components/cart.component';
 
-import { BrowserRouter as Router } from 'react-router-dom';
-const Route = require("react-router-dom").Route;
+
  
 class App extends Component {
   

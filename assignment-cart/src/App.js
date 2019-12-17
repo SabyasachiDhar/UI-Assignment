@@ -7,12 +7,11 @@ import { Route } from "react-router-dom"
 import Header from './Components/header.component';
 import Home from './Components/home.component';
 import Cart from './Components/cart.component';
+import FilterProgress from './Components/filter.component';
 
 
- 
 class App extends Component {
   
-
   render() {
     return (
       <Router>
@@ -23,7 +22,9 @@ class App extends Component {
             <div id="sidebar-container" className="sidebar-expanded d-none d-md-block">
               <aside>
                 Aside
-                {/* <FilterCard /> */}
+                <FilterProgress 
+                  
+                />
               </aside>
             </div>
             <div className="col p-4">

@@ -3,8 +3,6 @@ import { connect } from 'react-redux';
 const Link = require("react-router-dom").Link;
 
 
-
-
 class CartIcon extends Component {
 
   render() {

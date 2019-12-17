@@ -13,10 +13,10 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    this.UserList();
+    this.cardList();
   }
 
-  UserList() {
+  cardList() {
     fetch("https://api.myjson.com/bins/qzuzi")
       .then(res => res.json())
       .then(
@@ -27,9 +27,6 @@ class Home extends Component {
             items: result
           });
         },
-        // Note: it's important to handle errors here
-        // instead of a catch() block so that we don't swallow
-        // exceptions from actual bugs in components.
         (error) => {
           this.setState({
             isLoaded: true,

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar } from 'react-bootstrap';
 import CartIcon from './cartIcon.component';
-const Link = require("react-router-dom").Link;
 
 
 class Header extends Component {
